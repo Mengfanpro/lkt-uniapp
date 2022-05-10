@@ -1,0 +1,743 @@
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    padding-bottom: 120rpx;
+}
+
+/* 选择属性名称 */
+.choose_attr {
+    padding-left: 30rpx;
+}
+
+.choose_attr li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30rpx;
+    height: 80rpx;
+    color: #666666;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 28rpx;
+}
+
+.choose_attr .img {
+    width: 30rpx;
+    height: 21rpx;
+}
+
+.btn_bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 98rpx;
+    background: @btnBackground;
+    color: @lightColor;
+    font-size: 30rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 下面是主页面 */
+.chooseAttr,
+.chooseAttrStyle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90rpx;
+    padding: 0 30rpx;
+    font-size: 28rpx;
+    color: #242424;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.chooseAttrStyle > ul {
+    display: flex;
+}
+
+.chooseAttrStyle li {
+    display: flex;
+    align-items: center;
+    margin-left: 50rpx;
+}
+
+.chooseAttrStyle li img {
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 18rpx;
+}
+
+.chooseAttr .input {
+    flex: 1;
+    text-align: right;
+    font-size: 28rpx;
+    color: #666666;
+    padding: 0 20rpx;
+}
+
+.jiantou {
+    width: 15rpx;
+    height: 27rpx;
+}
+
+.delete_img {
+    width: 30rpx;
+    height: 30rpx;
+    margin-left: auto;
+    // margin-right: 30rpx;
+}
+
+.attrList {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 7rpx;
+    padding-right: 30rpx;
+}
+
+.attrList > div {
+    min-width: 120rpx;
+    height: 56rpx;
+    line-height: 56rpx;
+    padding: 0 20rpx;
+    color: #666666;
+    font-size: 26rpx;
+    text-align: center;
+    background: #f6f6f6;
+    margin-top: 24rpx;
+    border-radius: 8rpx;
+    margin-left: 23rpx;
+    box-sizing: border-box;
+}
+
+.attrList .active {
+    background: #ffffff;
+    border: 1px solid #020202;
+}
+
+.choose_attr .active,
+.attrList .active {
+    color: #020202;
+}
+
+.attr_hr {
+    background: #eeeeee;
+    height: 1px;
+    margin-left: 30rpx;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.hr + .attrBox .attr_hr {
+    background: transparent;
+}
+
+.table {
+    min-width: 100%;
+    display: table;
+}
+
+.table .tr {
+    display: table-row;
+}
+
+.table .th,
+.table .td {
+    display: table-cell;
+    text-align: center;
+}
+
+.table .th {
+    color: #666666;
+    font-size: 28rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-bottom: 1px solid #eeeeee;
+    white-space: nowrap;
+    padding: 0 12rpx;
+}
+
+.table .td {
+    text-align: center;
+    font-size: 26rpx;
+    color: #020202;
+    border-bottom: 1px solid #eeeeee;
+    white-space: nowrap;
+    padding: 0 12rpx;
+}
+
+.table .td div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88rpx;
+}
+
+.table .td .input {
+    width: 120rpx;
+    height: 60rpx;
+    border: 1px solid #b8b8b8;
+    margin: 0 auto;
+    border-radius: 4rpx;
+    font-size: 26rpx;
+    color: #020202;
+}
+
+.hr {
+    background: #f6f6f6;
+    height: 20rpx;
+    width: 100%;
+}
+
+/* 以下为自定义属性名称 */
+.addAttr,
+.addAttrName {
+    display: flex;
+    align-items: center;
+    height: 90rpx;
+    padding-right: 30rpx;
+    margin-left: 30rpx;
+}
+
+.addAttr button,
+.addAttrName button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    font-size: 26rpx;
+    padding: 0;
+    border-radius: 4rpx;
+}
+
+.addAttr button {
+    width: 130rpx;
+    height: 60rpx;
+    color: #020202;
+    border: 1px solid #020202;
+}
+
+.addAttr button:after,
+.addAttrName button:after {
+    border: 0;
+}
+
+.addLeft {
+    width: 170rpx;
+    font-size: 28rpx;
+    color: #242424;
+}
+
+.addAttr input,
+.addAttrName input {
+    font-size: 28rpx;
+    flex: 1;
+}
+
+.addBtn,
+.removeBtn {
+    width: 80rpx;
+    height: 60rpx;
+}
+
+.addBtn {
+    color: #020202;
+    border: 1px solid #020202;
+}
+
+.removeBtn {
+    color: #888888;
+    border: 1px solid #999999;
+    margin-left: 20rpx;
+}
+
+.addAttrValue {
+    display: flex;
+    align-items: center;
+    padding-right: 10rpx;
+    margin-left: 30rpx;
+    padding-bottom: 10rpx;
+}
+
+.addAttrValue ul {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.addAttrValue li {
+    height: 56rpx;
+    line-height: 56rpx;
+    padding: 0 35rpx;
+    font-size: 26rpx;
+    color: #666666;
+    background: #f6f6f6;
+    border-radius: 8rpx;
+    margin-right: 20rpx;
+    margin-bottom: 20rpx;
+    position: relative;
+}
+
+.addAttrValue .icon {
+    position: absolute;
+    top: -8rpx;
+    right: -8rpx;
+    width: 26rpx;
+    height: 26rpx;
+    border-radius: 50%;
+    background: #cacaca;
+}
+
+.addAttrValue .icon:after {
+    content: '';
+    position: absolute;
+    width: 14rpx;
+    height: 2rpx;
+    background: #ffffff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.border-bottom {
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.home_navigation {
+    position: fixed;
+    border-bottom: none;
+    background-color: @titleBackground;
+    align-items: flex-end;
+    padding-bottom: 17rpx;
+    box-sizing: border-box;
+    
+    .search_btn {
+        font-size: 28rpx;
+        color: @titleColor;
+        line-height: 68rpx;
+    }
+    
+    .home_input input{
+        height: 68rpx;
+        border-radius: 38rpx;
+        padding-left: 70rpx;
+    }
+    
+    .searchImg{
+        width: 34rpx;
+        height: 34rpx;
+        left: 20rpx;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}
+
+
+.chooseBottom{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 98rpx;
+    display: flex;
+    background-color: #FFFFFF;
+    
+    &_left{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 30rpx;
+        border-top: 1px solid #DDDDDD;
+        box-sizing: border-box;
+        font-size: 28rpx;
+        font-family: PingFang SC;
+        color: #666666;
+        
+        span{
+            font-weight: bold;
+            color: #FF7D00;
+            margin: 0 4rpx;
+        }
+    }
+    
+    .btn{
+        .center();
+        width: 240rpx;
+        height: 100%;
+        background: #014343;
+        font-size: 30rpx;
+        font-family: PingFang SC;
+        color: #FFFEFE;
+    }
+    
+}
+
+.checkedBox{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    &_top{
+        display: flex;
+        align-items: center;
+        height: 90rpx;
+        background: #F8F8F8;
+        padding: 0 30rpx;
+        font-size: 30rpx;
+        font-family: PingFang SC;
+        color: #020202;
+        border-bottom: 1px solid #E6E6E6;
+        box-sizing: border-box;
+        
+        >div{
+            display: flex;
+            align-items: center;
+            font-size: 26rpx;
+            font-family: PingFang SC;
+            color: #666666;
+            margin-left: auto;
+            height: 100%;
+            
+            img{
+                width: 28rpx;
+                height: 28rpx;
+                margin-right: 10rpx;
+            }
+            
+        }
+        
+    }
+    
+    &_ul{
+        height: 488rpx;
+        overflow-y: auto;
+        background-color: #FFFFFF;
+        padding-left: 30rpx;
+        
+        >div{
+            display: flex;
+            align-items: center;
+            height: 80rpx;
+            margin: 0;
+            border-bottom: 1px solid #EEEEEE;
+            box-sizing: border-box;
+            padding-right: 30rpx;
+            font-size: 28rpx;
+            font-family: PingFang SC;
+            color: #020202;
+            
+            .icon{
+                position: relative;
+                width: 33rpx;
+                height: 33rpx;
+                border: 1px solid #999999;
+                border-radius: 17rpx;
+                margin-left: auto;
+            
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 18rpx;
+                    height: 3rpx;
+                    background: #999999;
+                    border-radius: 1px;
+                }
+            }
+        }
+        
+    }
+    
+}
+
+
+.attrContent{
+    .hr{
+        background-color: #F6F6F6;
+    }
+    
+    .nodata{
+        font-size: 28rpx;
+        font-family: PingFang SC;
+        font-weight: 500;
+        color: #888888;
+        margin-left: 50%;
+        margin-top: 50%;
+        transform: translate(-50%,-50%);
+        image{
+            width: 250rpx;
+            height: 300rpx;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        p{
+            text-align: center;
+            margin-top: 25rpx;
+            margin-bottom: -22rpx;
+        }
+    }
+    
+    &_top{
+        display: flex;
+        align-items: center;
+        padding: 0 30rpx;
+        height: 90rpx;
+        
+        &_left{
+            font-size: 28rpx;
+            font-family: PingFang SC;
+            color: #242424;
+            line-height: 28rpx;
+        }
+        
+        &_center{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 30rpx;
+            
+            input{
+                flex: 1;
+                text-align: right;
+                margin-right: 20rpx;
+                font-size: 28rpx;
+                font-family: PingFang SC;
+                color: #666666;
+            }
+            
+            input::placeholder{text-align:right;}
+            
+            image{
+                width: 15rpx;
+                height: 27rpx;
+            }
+        }
+        
+        .btn{
+            .outBtn;
+            .center();
+            width: 140rpx;
+            height: 60rpx;
+            border-radius: 4rpx;
+            box-sizing: border-box;
+            font-size: 26rpx;
+            font-family: PingFang SC;
+        }
+        
+    }
+
+    .attrBox{
+        padding: 30rpx 30rpx 6rpx;
+        
+        &_top{
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding-bottom: 30rpx;
+            
+            .attrName{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                font-size: 28rpx;
+                font-family: PingFang SC;
+                color: #242424;
+                line-height: 28rpx;
+                overflow: hidden;
+                
+                .text{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                
+                .attrTips{
+                    flex: 1;
+                    color: #999999;
+                    white-space: nowrap;
+                }
+            }
+            
+            .attrValueBtn{
+                display: flex;
+                align-items: center;
+                font-size: 26rpx;
+                font-family: PingFang SC;
+                color: #014343;
+                line-height: 26rpx;
+                white-space: nowrap;
+                padding-right: 20rpx;
+                border-right: 1px solid #EEEEEE;
+
+                image{
+                    width: 24rpx;
+                    height: 24rpx;
+                    margin-right: 10rpx;
+                }
+                
+            }
+            
+            .delete_img{
+                width: 26rpx;
+                height: 26rpx;
+                margin-left: 20rpx;
+            }
+            
+        }
+        
+        &_ul{
+            display: flex;
+            flex-wrap: wrap;
+            
+            >view{
+                .center();
+                min-width: 120rpx;
+                height: 56rpx;
+                background: #F6F6F6;
+                border-radius: 8rpx;
+                font-size: 26rpx;
+                font-family: PingFang SC;
+                color: #666666;
+                margin-right: 22rpx;
+                margin-bottom: 24rpx;
+                padding: 0 10rpx;
+                box-sizing: border-box;
+                position: relative;
+                
+                image{
+                    position: absolute;
+                    width: 26rpx;
+                    height: 26rpx;
+                    background: #76E6B6;
+                    border-radius: 50%;
+                    top: -8rpx;
+                    right: -6rpx;
+                }
+            }
+            
+            .active{
+                .outBtn();
+            }
+            
+        }
+        
+    }
+
+}
+
+.attrBox_ul {
+    
+}
+
+
+.addMask{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 550rpx;
+    height: 326rpx;
+    background: #FFFFFF;
+    border-radius: 23rpx;
+    
+    &_title{
+        font-size: 34rpx;
+        font-family: PingFang SC;
+        font-weight: bold;
+        color: #020202;
+        line-height: 34rpx;
+        padding: 40rpx 0;
+        text-align: center;
+    }
+    
+    input{
+        width: 490rpx;
+        height: 70rpx;
+        border: 1px solid #DDDDDD;
+        border-radius: 8rpx;
+        margin: 0 auto;
+        padding: 0 25rpx;
+        box-sizing: border-box;
+        font-size: 28rpx;
+        font-family: PingFang SC;
+    }
+    
+    .btn{
+        display: flex;
+        height: 94rpx;
+        margin-top: 49rpx;
+        border-top: 1px solid #EEEEEE;
+        box-sizing: border-box;
+        
+        >view{
+            flex: 1;
+            .center();
+            font-size: 34rpx;
+            font-family: PingFang SC;
+            color: #999999;
+            line-height: 34rpx;
+        }
+        
+        >view:last-child{
+            color: #020202;
+            border-left: 1px solid #EEEEEE;
+        }
+        
+    }
+    
+}
+
+
+.upImg[class]{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .center();
+    width: 60rpx!important;
+    height: 60rpx!important;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+    .shac{
+        width: 24rpx;
+        height: 24rpx;
+    }
+    
+    .cha{
+        position: absolute;
+        right: -12rpx;
+        top: -12rpx;
+        width: 26rpx;
+        height: 26rpx;
+        background: #76E6B6;
+        border-radius: 50%;
+        z-index: 9;
+    }
+    
+    .see{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.home_input .cancel{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30rpx;
+    height: 30rpx;
+    left: 560rpx;
+}

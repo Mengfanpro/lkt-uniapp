@@ -1,0 +1,548 @@
+.container {
+    min-height: 100vh;
+    padding-bottom: 100rpx;
+}
+
+.table {
+    border-right: 0;
+    border-bottom: 0;
+    width: 100%;
+    min-width: 100vw;
+}
+
+.tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.th,
+.td {
+    text-align: center;
+    margin: 0 6rpx;
+    min-width: 160rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.th {
+    font-weight: 400;
+}
+
+.td input {
+    width: 110rpx;
+    border: 1px solid #b8b8b8;
+    text-align: center;
+    color: #020202;
+}
+
+.attrList {
+    font-size: 28rpx;
+    color: #666;
+    width: 100%;
+    overflow: scroll;
+}
+
+.seeTitle {
+    height: 90rpx;
+    padding-left: 32rpx;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 28rpx;
+    color: #020202;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+}
+
+.attrList {
+    font-size: 28rpx;
+    color: #666;
+    width: 100%;
+    overflow: scroll;
+    padding: 0 20rpx;
+}
+
+.attrListHead {
+    list-style: none;
+    height: 90rpx;
+}
+
+.attrListHead li {
+    float: left;
+}
+
+.attrListHead .th{
+    color: #666666;
+}
+
+.attrListBody .td{
+    color: #020202;
+}
+
+.attrListBody .tr{
+    padding: 20rpx 0;
+}
+.attrListBody {
+    list-style: none;
+    // height: 90rpx;
+    // padding: 20rpx 0;
+}
+
+.attrListBody li {
+    float: left;
+}
+
+.attrListBody div,
+.attrListBody span {
+    color: #020202;
+}
+
+.attrListBody > div:first-child {
+    height: 100%;
+    float: left;
+}
+
+.submitBtn {
+    .center();
+    font-size: 30rpx;
+    width: 50%;
+    height: 100%;
+}
+
+.boxChooseDiv {
+    .center();
+    height: 50rpx;
+    font-size: 26rpx;
+    color: #666666;
+    border-radius: 4rpx;
+    background-color: #f6f6f6;
+    padding: 0;
+    margin-right: 20rpx;
+    min-width: 160rpx;
+    flex-flow: wrap;
+    padding: 0 10rpx;
+}
+
+.active[class] {
+    .outBtn();
+}
+
+.jiantouDiv {
+    position: absolute;
+    right: 0;
+    width: 80rpx;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.jiantouDiv img {
+    width: 16rpx;
+    height: 28rpx;
+}
+
+.mainImg {
+    height: 28rpx;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    background-color: #ff3333;
+    color: #fff;
+    font-size: 22rpx;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delImg {
+    width: 30rpx;
+    height: 30rpx;
+    position: absolute;
+    top: -10rpx;
+    right: -10rpx;
+    z-index: 2;
+}
+
+.setMainImg {
+    height: 28rpx;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #575859;
+    color: #fff;
+    font-size: 22rpx;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upImg1 {
+    width: 120rpx;
+    height: 120rpx;
+    position: relative;
+    margin-right: 10rpx;
+    margin-bottom: 20rpx;
+}
+
+.upImg {
+    width: 120rpx;
+    height: 120rpx;
+    border: 1px dashed #dddddd;
+    font-size: 22rpx;
+    text-align: center;
+    padding: 8rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formDiv {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.formList1 {
+    display: flex;
+    width: 100%;
+    padding: 20rpx 0;
+}
+
+.formList {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.leftText {
+    width: 25%;
+    font-size: 28rpx;
+    padding-left: 10rpx;
+    color: #020202;
+}
+
+.rightInput {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex: 1;
+}
+
+.leftText1 {
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    width: 180rpx;
+    font-size: 28rpx;
+    justify-content: flex-start;
+    padding-left: 10rpx;
+    color: #020202;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.leftText1 span:last-child{
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.attrSpan {
+    font-size: 28rpx;
+    color: #020202;
+}
+
+.rightInput1 {
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    overflow-x: auto;
+}
+
+.leftText2 {
+    display: flex;
+    align-items: center;
+    width: 180rpx;
+    font-size: 28rpx;
+    justify-content: flex-end;
+    padding-right: 30rpx;
+    color: #666666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.leftText2 span{
+    color: #666666;
+}
+
+.rightInput2 {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    font-size: 28rpx;
+    color: #020202;
+    overflow: hidden;
+    
+    .proName{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: 30rpx;
+    }
+}
+
+.rightInput2 input {
+    font-size: 28rpx;
+}
+
+.formList2 {
+    display: flex;
+    width: 100%;
+    line-height: 60rpx;
+}
+
+.formDiv1 {
+    border-bottom: 0px solid #e9ecef;
+}
+
+.formDiv1:first-child{
+    margin-top: 20rpx;
+}
+.formDiv1:last-child{
+    margin-bottom: 20rpx;
+}
+
+.rightInput input {
+    font-size: 26rpx;
+    width: 100%;
+}
+
+.rightInput1 input {
+    font-size: 26rpx;
+    width: 100%;
+}
+
+.must {
+    color: red;
+    margin-right: 10rpx;
+}
+
+@media screen and (max-width: 374x) {
+    .rightInput1 {
+        width: 70%;
+    }
+
+    .leftInput1 {
+        width: 30%;
+    }
+
+    .leftInput {
+        width: 30%;
+    }
+}
+
+.max_5 {
+    color: #bbbbbb;
+    font-size: 22rpx;
+    margin-top: 6rpx;
+}
+
+.jianyi {
+    font-size: 22rpx;
+    color: #b8b8b8;
+}
+
+.pl_30 {
+    padding: 0 0 0 30rpx;
+}
+
+.wh_100 {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.h_auto {
+    height: auto;
+}
+
+.font_28 {
+    font-size: 28rpx;
+}
+
+.font_30 {
+    font-size: 30rpx;
+}
+
+.border_bottom_0 {
+    border-bottom: none;
+}
+
+.submitDiv {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100rpx;
+    z-index: 998;
+}
+
+.submitDiv .div1 {
+    .solidBtn1();
+}
+
+.submitDiv .div2 {
+    .solidBtn();
+}
+
+.submitDiv .div3 {
+    .solidBtn();
+    width: 100%;
+}
+
+.hr {
+    background-color: #f6f6f6;
+    height: 20rpx;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.mask > div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 740rpx;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.mask_title {
+    display: flex;
+    justify-content: space-between;
+    height: 100rpx;
+    width: 100%;
+    line-height: 100rpx;
+    color: #020202;
+    font-size: 30rpx;
+    font-weight: bold;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.closeImg {
+    width: 27rpx;
+    height: 28rpx;
+}
+
+.chooseValueBox {
+    display: flex;
+    height: 90rpx;
+    background: #f6f6f6;
+    font-size: 28rpx;
+    color: #020202;
+    line-height: 90rpx;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    box-sizing: border-box;
+}
+
+.chooseValue {
+    display: flex;
+    align-items: center;
+}
+
+.chooseValue .span {
+    white-space: nowrap;
+    padding: 0 30rpx;
+    color: @tabColor;
+    font-size: 28rpx;
+}
+
+.chooseValue .fenge{
+    width: 15rpx;
+    height: 27rpx;
+}
+
+.flex {
+    display: flex;
+}
+
+.chooseBox {
+    flex: 1;
+    overflow: scroll;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+}
+
+.chooseBox li {
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #666666;
+    font-size: 26rpx;
+    border-bottom: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+
+.chooseBox li.active1 {
+    color: @tabColor;
+}
+
+.chooseBox li.active1 {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chooseBtn{
+    .center();
+    .solidBtn();
+    height: 98rpx;
+    font-size: 30rpx;
+}
+
+.active1 .img {
+    width: 29rpx;
+    height: 21rpx;
+    float: right;
+}
+
+.list2 span{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+uni-radio-group{
+    display: flex;
+    align-items: center;
+    .radio{
+        display: flex;
+        align-items: center;
+        margin-right: 40rpx;
+        span{
+            font-size: 28rpx;
+            color: #020202;
+            line-height: 28rpx;
+        }
+    }
+}

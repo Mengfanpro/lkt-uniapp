@@ -1,0 +1,290 @@
+.container{
+    min-height: 100vh;
+}
+
+.tabBox{
+    height: 90rpx;
+    background-color: #FFFFFF;
+    
+    .tab{
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        display: flex;
+        height: 90rpx;
+        border-bottom: 1px solid #EAE9EC;
+        background-color: #FFFFFF;
+        box-sizing: border-box;
+        
+        &_item{
+            flex: 1;
+            .center();
+            .size(30rpx);
+            color: #999999;
+        }
+        
+        .active{
+            color: @tabColor;
+            font-weight: bold;
+            position: relative;
+        }
+        .active:after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width:148rpx;
+            height:2px;
+            background:@tabColor;
+        }
+    }
+}
+
+
+.addCoupon{
+    padding-bottom: 138rpx;
+    padding-left: 30rpx;
+    
+    &_list{
+        display: flex;
+        align-items: center;
+        height: 90rpx;
+        border-bottom: 1px solid #EEEEEE;
+        padding-right: 30rpx;
+        .size(28rpx);
+        box-sizing: border-box;
+        
+        &_left{
+            width: 176rpx;
+            .size(28rpx);
+            color: #020202;
+            
+            text{
+                color: #FF0000;
+                margin-right: 10rpx;
+            }
+            text.none{
+                opacity: 0;
+            }
+        }
+        
+        &_ipt{
+            flex: 1;
+            font-size: 28rpx;
+            
+            .radioBox{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                label{
+                    display: flex;
+                    align-items: center;
+                }
+                
+                .scale8{
+                    transform: scale(0.8);
+                    width: 44rpx;
+                    margin-left: -5rpx;
+                    margin-right: 5rpx;
+                }
+            }
+        }
+    }
+    
+    &_btn{
+        position: fixed;
+        bottom: 0;left: 0;right: 0;
+        height:98rpx;
+        background:@btnBackground;
+        color: #FFFEFE;
+        font-size: 30rpx;
+        line-height: 98rpx;
+        text-align: center;
+    }
+}
+
+
+.seeCoupon{
+    
+    &_item{
+        background-color: #FFFFFF;
+        padding-left: 30rpx;
+        box-sizing: border-box;
+        margin-bottom: 20rpx;
+        
+        &_top{
+            width:690rpx;
+            height:167rpx;
+            padding-top: 30rpx;
+            background-repeat: no-repeat;
+            background-size: 690rpx 167rpx;
+            background-position: left bottom;
+            display: flex;
+            position: relative;
+            
+            &_left{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 202rpx;
+                
+                >view{
+                    font-size: 48rpx;
+                    line-height: 36rpx;
+                    font-weight: bold;
+                    color: #FF3333;
+                    margin-bottom: 20rpx;
+                    
+                    text{
+                        font-weight: 300;
+                        .size(26rpx);
+                    }
+                }
+                
+                >text{
+                    .size(24rpx);
+                    color: #010101;
+                }
+            }
+            
+            &_right{
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                overflow: hidden;
+                box-sizing: border-box;
+                padding: 46rpx 34rpx;
+                
+                view{
+                    .size(28rpx);
+                    color: #010101;
+                    margin-bottom: auto;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                
+                text{
+                    .size(22rpx);
+                    color: #656565;
+                }
+            }
+        
+            .icon{
+                .center();
+                position: absolute;
+                top: 32rpx;
+                right: 1px;
+                width:88rpx;
+                height:37rpx;
+                background:rgba(255,232,232,1);
+                border-radius:0px 8rpx 0px 8rpx;
+                .size(24rpx);
+                color: #FF3333;
+            }
+        
+        }
+        
+        &_center{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 30rpx;
+            padding: 30rpx 0;
+            border-bottom: 1px solid #E5E5E5;
+            
+            view{
+                .size(26rpx);
+                color: #656565;
+                
+                text{
+                    color: #010101;
+                }
+            }
+        }
+        
+        &_bottom{
+            display: flex;
+            justify-content: flex-end;
+            padding: 15rpx 30rpx;
+            
+            view{
+                .center();
+                width:140rpx;
+                height:50rpx;
+                border:1px solid rgba(183,183,183,1);
+                border-radius:6rpx;
+                .size(24rpx);
+                color: #010101;
+                margin-left: 20rpx;
+            }
+        }
+    }
+    
+}
+
+.jiantou{
+    width:15rpx;
+    height:27rpx;
+}
+
+
+.delMask{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width:550rpx;
+    height:250rpx;
+    background:rgba(255,255,255,1);
+    border-radius:23rpx;
+}
+.delMask>text{
+    display: block;
+    text-align: center;
+    color: #020202;
+    font-size: 30rpx;
+    line-height: 30rpx;
+    padding: 64rpx 0;
+}
+.delMask>view{
+    display: flex;
+}
+
+.delMask>view view{
+    flex: 1;
+    height: 93rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999999;
+    font-size: 34rpx;
+    box-sizing: border-box;
+    border-top: 1px solid #EEEEEE;
+}
+
+.delMask>view view:last-child{
+    border-left: 1px solid #EEEEEE;
+    color: #020202;
+}
+
+
+.no-bargain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 240rpx;
+    
+    img{
+        width: 220rpx;
+        height: 250rpx;
+        margin: auto;
+        margin-bottom: 40rpx;
+    }
+    
+    p{
+        font-size: 28rpx;
+        color: #888888;
+    }
+}

@@ -1,0 +1,98 @@
+.size(@size){
+    font-size: @size;
+    line-height: @size;
+}
+
+.container{
+    min-height: 100vh;
+    background-color: #F5F5F5;
+    
+    .jiantou{
+        width:27rpx;
+        height:15rpx;
+        margin-left: auto;
+        padding: 8rpx 20rpx;
+    }
+    
+    .content{
+        background-color: #FFFFFF;
+        padding-left: 30rpx;
+        
+        .list{
+            
+            &_top{
+                border-bottom: 1px solid #E5E5E5;
+            }
+            
+            &_item{
+                display: flex;
+                align-items: center;
+                padding: 24rpx 0;
+            }
+            
+            &_bottom{
+                padding-left: 60rpx;
+                border-bottom: 1px solid #E5E5E5;
+                
+                &_item{
+                    
+                }
+                
+                .list_item{
+                    padding: 20rpx 0;
+                }
+            }
+            
+            .label{
+                display: flex;
+                align-items: center;
+                
+                text{
+                    .size(26rpx);
+                }
+                
+                .checkBox{
+                    width: 30rpx;
+                    height: 30rpx;
+                    position: relative;
+                    box-sizing: border-box;
+                    margin-right: 20rpx;
+                    background-color: #fff;
+                    border: 1px solid rgba(183,183,183,1);
+                    border-radius:4rpx;
+                    background-size: 80%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                
+                .checkBox.active{
+                    border-color: #010101;
+                }
+                
+            }
+        }
+        
+    }
+    
+    .bottomBox{
+        height: 98rpx;
+        
+        >view{
+			.solidBtn();
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 98rpx;
+            font-size: 30rpx;
+            line-height: 98rpx;
+            text-align: center;
+        }
+    }
+    
+}
+
+
+.pl_60{
+    padding-left: 60rpx!important;
+}

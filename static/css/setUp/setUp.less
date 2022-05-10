@@ -1,0 +1,97 @@
+.box {
+    height: 100vh;
+}
+
+.setup-ul {
+    position: relative;
+}
+
+.setup-ul > li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30rpx 0rpx;
+    font-size: 28rpx;
+    border-bottom: 1px solid #eee;
+}
+
+.button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 98rpx;
+    width: 100vw;
+    font-size: 30rpx;
+    color: #fff;
+    background-color: @btnBackground;
+    text-align: center;
+    line-height: 98rpx;
+}
+
+.margin {
+    margin-bottom: 0;
+}
+
+.srt_div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.srt_div_div {
+    width: 560rpx;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 450rpx;
+}
+
+.srt_title {
+    font-size: 36rpx;
+    text-align: center;
+    line-height: 90rpx;
+    border-bottom: 1rpx solid #efefef;
+    padding-bottom: 10rpx;
+}
+
+.srt_word {
+    font-size: 30rpx;
+    padding: 40rpx 30rpx;
+    color-interpolation: #333;
+}
+
+.srt_bottom {
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    font-size: 30rpx;
+    border-top: 1rpx solid #efefef;
+}
+
+.srt_left,
+.srt_right {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.srt_left_height {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-right: 1rpx solid #efefef;
+    height: 90rpx;
+}
+
+.srt_right {
+    color: #005edf;
+}
+
+.load {
+    height: 90vh;
+}

@@ -1,0 +1,79 @@
+.font(@size){
+    font-size: @size;
+    line-height: @size;
+}
+
+.red{
+    color: #FF3333!important;
+}
+
+.container{
+    min-height: 100vh;
+    
+    .zprice{
+        text-align: center;
+        font-size: 50rpx;
+        color: #242424;
+        line-height: 38rpx;
+        margin: 80rpx auto 25rpx;
+    }
+    
+    .status{
+        text-align: center;
+        .font(28rpx);
+        color: #666666;
+        margin-bottom: 62rpx;
+    }
+    
+    .list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 90rpx;
+        padding: 24rpx 0;
+        margin: 0 30rpx;
+        border-bottom: 1px solid #EEEEEE;
+        box-sizing: border-box;
+
+        view{
+            .font(28rpx);
+            color: #999999;
+        }
+        
+        text{
+            .font(28rpx);
+            color: #020202;
+            max-width: 370rpx;
+            text-align: right;
+        }
+    }
+    
+    .btnBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 80rpx;
+        
+        view{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:690rpx;
+            height:90rpx;
+            border-radius:8rpx;
+            box-sizing: border-box;
+            font-size: 30rpx;
+        }
+        
+        .background{
+            .solidBtn();
+        }
+        
+        .border{
+            border: 1px solid #020202;
+            color: #020202;
+            margin-top: 28rpx;
+        }
+    }
+}

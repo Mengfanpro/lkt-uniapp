@@ -1,0 +1,164 @@
+.wallet_account {
+    width: 670rpx;
+    height: 380rpx;
+    background: linear-gradient(-30deg, #FFF7D1 0%, #D6C68B 100%);
+    border-radius: 10px;
+    margin: 42rpx auto 56rpx;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-position: left top;
+    background-size: 100% 100%;
+}
+
+.wallet_r {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 88rpx;
+}
+
+.wallet_r,
+.wallet_r>div,
+.wallet_mx {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wallet_mx>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.wallet_value{
+    font-size: 28rpx;
+    line-height: 30rpx;
+    color: #020202;
+}
+
+.wallet_size{
+    font-size: 24rpx;
+    line-height: 22rpx;
+    color: #9A9A9A;
+    margin-top: 14rpx;
+}
+
+.wallet_r>div {
+    .center();
+    width: 50%;
+    height: 100rpx;
+    font-size: 30rpx;
+    color: @btnBackground;
+    height: 30rpx;
+}
+
+.wallet_r>div img {
+    width: 40rpx;
+    height: 32rpx;
+    margin-right: 20rpx;
+}
+
+.wallet_border {
+    border-right: 1px solid #666;
+}
+
+.wallet_ct {
+    font-size: 88rpx;
+    line-height: 68rpx;
+    margin-bottom: 24rpx;
+    margin-top: 98rpx;
+    color: @btnBackground;
+}
+
+.wallet_xt {
+    font-size: 24rpx;
+    line-height: 24rpx;
+    margin-bottom: 80rpx;
+    color: @btnBackground;
+}
+
+.wallet_my {
+    font-size: 30rpx;
+    color: #020202;
+    padding: 0 30rpx 24rpx 30rpx;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+}
+
+.wallet_mx {
+    height: 126rpx;
+    margin: 0 30rpx;
+    border-bottom: 1px solid #eee;
+    font-size: 28rpx;
+    color: #242424;
+}
+
+.wallet_zhi {
+    font-size: 40rpx;
+    color: #020202;
+}
+
+.hei{
+    font-size: 40rpx;
+    color: #999;
+}
+
+.position {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+    background-color: #fff;
+}
+
+.wallet_account_box {
+    height: 544rpx;
+    position: relative;
+}
+
+.wallet_account_bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.wallet_account_bg .img {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.wallet_ct,
+.wallet_xt {
+    z-index: 2;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.nodata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 128rpx;
+    img{
+        width: 240rpx;
+        height: 272rpx;
+    }
+    p{
+        color: #888888;
+        margin-top: 28rpx;
+        font-size: 28rpx;
+    }
+}

@@ -1,0 +1,92 @@
+.container{
+    
+    &_row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 30rpx;
+        padding-right: 30rpx;
+        min-height: 90rpx;
+        border-bottom: 1px solid #EDEDED;
+        
+        &_left{
+            width: 170rpx;
+            font-size: 28rpx;
+            line-height: 28rpx;
+            color: #010101;
+        }
+        
+        &_right{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 28rpx;
+            
+            input{
+                width: 100%;
+                font-size: 28rpx;
+            }
+            
+            .jiantou{
+                width:15rpx;
+                height:27rpx;
+                margin-left: 20rpx;
+            }
+            
+            .xuanze{
+                width:30rpx;
+                height:30rpx;
+            }
+            
+            .shanchudizhi{
+                width:24rpx;
+                height:24rpx;
+            }
+            
+            .imgHr{
+                width:1px;
+                height:25rpx;
+                background:rgba(229,229,229,1);
+                margin-left: 24rpx;
+            }
+            
+            .freight_bottom{
+                width:22rpx;
+                height:12rpx;
+                margin-left: 30rpx;
+            }
+        }
+    
+        &_bottom{
+            font-size: 24rpx;
+            color: #656565;
+            line-height: 36rpx;
+            margin-top: 20rpx;
+            width: 100%;
+        }
+    
+    }
+    
+    &_bottomBtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:690rpx;
+        height:90rpx;
+        background:@btnBackground;
+        border-radius:8rpx;
+        margin: 68rpx auto 30rpx;
+        color: #FFFFFF;
+        font-size: 30rpx;
+    }
+    
+    &_bottomBtn.btn1{
+        border:1px solid @btnBackground;
+        background: #FFFFFF;
+        box-sizing: border-box;
+        color: @btnBackground;
+        margin-top: 30rpx;
+    }
+    
+}

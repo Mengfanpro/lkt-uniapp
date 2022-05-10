@@ -1,0 +1,83 @@
+uni-input div {
+    display: flex;
+    align-items: center;
+}
+
+.message {
+    margin: 0 30rpx;
+    font-size: 28rpx;
+    color: #020202;
+    position: relative;
+}
+
+.message .adddis {
+    justify-content: space-between;
+}
+
+input::-webkit-input-placeholder {
+    color: #9D9D9D !important;
+}
+input {
+    font-size: 14px;
+}
+
+.message li {
+    height: 100rpx;
+    border-bottom: 1px solid #F6f6f6;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.message li > div {
+    width: 100%;
+}
+
+/* li div span{float: left;} */
+/* li div input{float: right;} */
+.message input {
+    border: none;
+    margin-left: 10rpx;
+    width: 75%;
+    display: inline-block;
+}
+
+/* .flex,.hide_head{display: flex;flex-flow: row nowrap;justify-content:space-between;align-items: center;} */
+.storage {
+    width: 690rpx;
+    height: 90rpx;
+    font-size: 30rpx;
+    color: @lightColor;
+    background-color: @btnBackground;
+    text-align: center;
+    line-height: 90rpx;
+    margin: 72rpx auto 0 auto;
+}
+
+/* .mint-navbar,.mint-tab-item.is-selected,.mint-tab-item{border-bottom: none;color: #020202;margin-bottom: 0;position: relative;} */
+.color {
+    background-color: @btnBackground;
+    color: @lightColor;
+}
+
+.border_b {
+    width: 50rpx;
+    margin: 0 auto;
+    border-bottom: 2px solid @btnBackground;
+    position: absolute;
+    bottom: 0;
+    left: 38%;
+}
+
+.must{
+    color: red;
+    margin-right: 6rpx;
+}
+
+.leftText{
+    display: inline-block;
+    width: 160rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

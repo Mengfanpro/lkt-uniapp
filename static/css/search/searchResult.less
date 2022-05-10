@@ -1,0 +1,521 @@
+.allgoods_li {
+    display: flex;
+    flex-direction: column;
+    width: 370rpx;
+    height: 592rpx;
+    position: relative;
+    border: 0;
+    background-color: #FFFFFF;
+    margin-bottom: 10rpx;
+    padding: 0;
+    
+    >img{
+        width: 370rpx;
+        height: 370rpx;
+        margin-bottom: 15rpx;
+    }
+    
+    .allgoods_title{
+        font-size: 28rpx;
+        color: #020202;
+        padding: 0 20rpx;
+    }
+    
+    .allgoods_p{
+        padding: 0 20rpx;
+        margin-bottom: 12rpx;
+    }
+    
+    .allgoods_price{
+        padding: 0 20rpx;
+    }
+}
+
+.allgoods .allgoods_li:nth-of-type(2n+1){
+    margin-right: auto;
+}
+
+.empty_play div {
+    width: 240rpx;
+    height: 70rpx;
+    border-radius: 8rpx;
+    border: 2rpx solid @btnBackground;
+    font-size: 30rpx;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
+    color: @btnBackground;
+    line-height: 60rpx;
+    margin-top: 60rpx;
+}
+
+.empty_play img {
+    margin: 200rpx 0 20rpx 0;
+    height: 227rpx;
+}
+
+.empty_play p {
+    font-size: 28rpx;
+    color: #888888;
+    margin: 0 60rpx;
+}
+
+#input {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.home-mesage span {
+    font-size: 30rpx;
+    color: #000;
+}
+
+.home-mesage {
+    display: flex;
+    align-items: center;
+}
+
+/*  搜索页商品展示模块样式    */
+.margin-top {
+    margin-top: 0rpx;
+}
+
+.home-hot > p {
+    text-align: center;
+}
+
+.keyword li {
+    width: 150rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.home_search {
+    margin: 0 30rpx !important;
+}
+
+.home_search li {
+    background-color: transparent !important;
+    width: 100% !important;
+    text-align: left !important;
+    border-bottom: 1rpx solid #EFEFEF !important;
+    border-radius: 0 !important;
+    padding: 30rpx 0 !important;
+    margin: 0 !important;
+}
+
+.home_search li p {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 20rpx;
+}
+
+.allgoods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 30rpx;
+}
+
+.allgoods_prev {
+    height: 12rpx;
+}
+
+.topTabBar {
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    font-size: 28rpx;
+    background-color: #fff;
+    color: #999999;
+    position: fixed;
+    background-color: #FFFFFF;
+    z-index: 88;
+    
+    >div{
+        flex: 1;
+        .center();
+        color: #666666;
+        font-size: 30rpx;
+        height: 100%;
+    }
+    
+    .active{
+        position: relative;
+        font-weight: bold;
+        color: @tabColor;
+    }
+    
+    .active:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30rpx;
+        height: 2px;
+        background: @tabColor;
+        border-radius: 2rpx;
+
+    }
+}
+
+.topFilter{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90rpx;
+    background-color: #FFFFFF;
+    z-index: 99;
+    border-bottom: 1px solid #eee;
+    
+    >div{
+        flex: 1;
+        height: 100%;
+        .center();
+        font-size: 28rpx;
+        color: #9A9A9A;
+        
+        .sortingImgBox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10rpx;
+            height: 100%;
+            
+            img{
+                width: 15rpx;
+                height: 9rpx;
+            }
+            
+            img:first-child{
+                margin-bottom: 6rpx;
+            }
+        }
+        
+        >img{
+            width: 20rpx;
+            height: 20rpx;
+            margin-left: 8rpx;
+        }
+    }
+    
+    .active{
+        color: @tabColor;
+    }
+}
+
+.container{
+    min-height: 100vh;
+    background-color: @bgColor;
+}
+
+.home_navigation {
+    position: fixed;
+    border-bottom: none;
+    background-color: @titleBackground;
+    align-items: flex-end;
+    padding-bottom: 17rpx;
+    box-sizing: border-box;
+    z-index: 99;
+    
+    .search_btn {
+        font-size: 28rpx;
+        color: @titleColor;
+        line-height: 68rpx;
+    }
+    
+    .home_input input{
+        height: 68rpx;
+        border-radius: 38rpx;
+        padding-left: 70rpx;
+        padding-right: 54rpx;
+    }
+    
+    .searchImg{
+        width: 34rpx;
+        height: 34rpx;
+        left: 20rpx;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .cancel{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30rpx;
+        height: 30rpx;
+        left: 560rpx;
+    }
+
+}
+
+.shoping {
+    padding-top: 30rpx;
+}
+
+.shoping > li {
+    display: flex;
+    height: 120rpx;
+    justify-content: flex-start;
+    margin: 0 24rpx 30rpx 24rpx;
+    box-shadow: 0rpx 4rpx 15rpx 0rpx rgba(238, 238, 238, 1);
+    border-radius: 5rpx;
+    padding: 25rpx;
+}
+
+.shoping .box {
+    width: 120rpx;
+    height: 120rpx;
+    background: rgba(255, 255, 255, 1);
+    margin-right: 27rpx;
+}
+
+.shoping img {
+    display: block;
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.shoping .shop-prop {
+    width: 530rpx;
+}
+
+.shop-prop .shop-content {
+    margin-bottom: 20rpx;
+}
+
+.shop-prop .shop-content,
+.shop-prop .shop-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.shop-prop .shop-count {
+    width: 480rpx;
+}
+
+.shop-content .shop-title {
+    font-weight: bold;
+    font-size: 28rpx;
+    color: #000;
+    line-height: 40rpx;
+}
+
+.shop-content .shop-subtitle {
+    height: 20rpx;
+    font-size: 24rpx;
+    color: #242424;
+    line-height: 24rpx;
+}
+
+.shop-content .baguette {
+    width: 100rpx;
+    height: 40rpx;
+    line-height: 36rpx;
+    color: @btnBackground;
+    border: 2rpx solid @btnBackground;
+    border-radius: 20rpx;
+    font-size: 26rpx;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.shop-count > view {
+    text-align: center;
+}
+
+.shop-count .sum {
+    font-size: 30rpx;
+    font-weight: 500;
+    color: #020202;
+    line-height: 30rpx;
+}
+
+.shop-count .sum-name {
+    font-size: 22rpx;
+    font-weight: 500;
+    color: rgba(136, 136, 136, 1);
+    line-height: 36rpx;
+    font-family: PingFang-SC-Medium;
+}
+
+.red {
+    color: @priceColor;
+}
+
+.volume {
+    font-size: 22rpx;
+    color: #9D9D9D;
+}
+
+
+.allgoods_price{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.allgoods_price span{
+    font-size: 32rpx;
+    line-height: 28rpx;
+    margin-bottom: 10rpx;
+    font-weight: bold;
+}
+.allgoods_price p{
+    font-size: 24rpx;
+    color: #999999;
+    line-height: 24rpx;
+}
+
+.allgoods_p{
+    margin: 8rpx 0 14rpx 0;
+}
+
+.vip_price[class]{
+    color: @btnBackground !important;
+}
+
+.filterMask{
+    position: fixed;
+    left: 0;right: 0;bottom: 0;top: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.filterMaskDiv[class]{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    top: 90rpx;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    >div{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 30rpx;
+        width: 100%;
+        box-sizing: border-box;
+        
+        .filterTitle{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .size(28rpx);
+            color: #9A9A9A;
+            padding: 30rpx 0;
+            
+            img{
+                width: 24rpx;
+                height: 13rpx;
+                margin-right: 46rpx;
+            }
+        }
+        
+        .filterScroll{
+            max-height: 430rpx;
+            
+            &Item{
+                display: flex;
+                flex-wrap: wrap;
+                
+                div{
+                    .center();
+                    .size(28rpx);
+                    height: 88rpx;
+                    color: #666666;
+                    padding: 0 24rpx;
+                    background-color: #F4F4F4;
+                    border-radius: 8rpx;
+                    margin-bottom: 18rpx;
+                    margin-right: 16rpx;
+                    box-sizing: border-box;
+                }
+                
+                .active{
+                    .outBtn();
+                }
+            }
+        }
+        
+        // .filterScrollH{
+        //     height: 200rpx;
+        // }
+        
+        .pricerBox{
+            display: flex;
+            align-items: center;
+            
+            span{
+                margin: 0 14rpx;
+            }
+            
+            input{
+                text-align: center;
+                font-size: 28rpx;
+                width: 324rpx;
+                height: 70rpx;
+                background: #F4F4F4;
+                border-radius: 8rpx;
+                color: #020202;
+            }
+        }
+        
+    }
+    
+    .filterBottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 90rpx;
+        margin-top: 38rpx;
+        padding-left: 0;
+        width: 100%;
+        
+        div{
+            flex: 1;
+            .center();
+            font-size: 28rpx;
+            height: 100%;
+        }
+        
+        div:first-child{
+            border-top: 1px solid #E6E6E6;
+            box-sizing: border-box;
+            color: #666666;
+        }
+        
+        div:last-child{
+            background-color: @btnBackground;
+            color: #FFFFFF;
+        }
+    }
+    
+}
+
+.goods_shopBox{
+    display: flex;
+    align-items: center;
+    margin: 12rpx 0 0;
+    font-size: 20rpx;
+    color: #333333;
+    
+    img{
+        width: 30rpx;
+        height: 30rpx;
+        border-radius: 50%;
+        margin-right: 10rpx;
+    }
+}

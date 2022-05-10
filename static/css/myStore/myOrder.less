@@ -1,0 +1,524 @@
+.container {
+    min-height: 100vh;
+    // background-color: #f6f6f6;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mpvue-picker-content {
+    z-index: 99999999999999;
+}
+
+.integral-img {
+    height: 26rpx;
+    width: 26rpx;
+    margin-right: 6rpx;
+    position: relative;
+    top: 4rpx;
+}
+
+.mask {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(000, 000, 000, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mask_cont {
+    text-align: center;
+    font-size: 30rpx;
+    color: #020202;
+    background-color: #fff;
+    border-radius: 10rpx;
+    height: 322rpx;
+    width: 550rpx;
+    position: relative;
+}
+
+.mask_cont > p {
+    margin: 70rpx 0;
+    padding: 0 100rpx;
+}
+
+.mask_cont > input {
+    width: 400rpx;
+    margin: 0 auto;
+    padding-left: 20rpx;
+    height: 66rpx;
+    border-radius: 10rpx;
+    border: 1px solid #9d9d9d;
+    text-align: left;
+}
+
+.mask_button {
+    border-top: 1px solid #eee;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.mask_button > div {
+    float: left;
+    width: 50%;
+    padding: 28rpx 0;
+    color: #020202;
+}
+
+.mask_button:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.mask_button_left {
+    border-right: 1px solid #eee;
+    color: #9d9d9d !important;
+}
+
+.refundBtn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100rpx;
+    font-size: 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.refundBtn div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fhSubmit {
+    .solidBtn();
+    height: 100rpx;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30rpx;
+    position: absolute;
+    bottom: 0;
+}
+
+.leftText1 {
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    font-size: 28rpx;
+    justify-content: flex-start;
+    padding-left: 10rpx;
+    color: #020202;
+}
+
+.rightInput1 {
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    position: relative;
+}
+
+.rightInput1 input {
+    font-size: 24rpx;
+    width: 100%;
+}
+
+.formList {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20rpx;
+    border-bottom: 1px solid #eee;
+}
+
+.fhDivTitle {
+    font-size: 36rpx;
+    height: 100rpx;
+    padding: 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.fhDiv {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 430rpx;
+    font-size: 28rpx;
+    background-color: #fff;
+}
+
+.jiantouDiv {
+    position: absolute;
+    right: 0;
+    width: 80rpx;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.jiantouDiv img {
+    width: 16rpx;
+    height: 28rpx;
+}
+
+.fhRadios {
+    width: 60rpx;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -75rpx;
+    top: 0;
+    bottom: 0;
+}
+
+.fhRadios1 {
+    width: 90rpx;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -60rpx;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.sellMoney {
+    font-size: 24rpx;
+    color: #333333;
+    text-align: right;
+}
+
+.proListUpRight {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    padding-left: 20rpx;
+    height: 120rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.proListUpLeft {
+    position: relative;
+    height: 120rpx;
+}
+
+.proSellData div {
+    margin-left: 60rpx;
+}
+
+.proSellData {
+    font-size: 24rpx;
+    color: #999999;
+    height: 100%;
+}
+
+.proTitle {
+    font-size: 24rpx;
+    line-height: 28rpx;
+    color: #020202;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+.proPro {
+    font-size: 20rpx;
+    color: #999999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 16rpx;
+}
+
+.proListUp {
+    width: 100%;
+    height: 180rpx;
+    padding: 30rpx 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.proListUpLeft img {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.proListDown {
+    height: 80rpx;
+    padding: 15rpx 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 30rpx;
+    position: relative;
+}
+
+.proBtn {
+    .outBtn();
+    width: 140rpx;
+    height: 50rpx;
+    border-radius: 6rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24rpx;
+    margin-left: 20rpx;
+}
+
+.proList {
+    padding: 0 30rpx;
+    background-color: #fff;
+}
+
+.orderDetail {
+    height: 180rpx;
+    padding: 30rpx;
+}
+
+.orderTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30rpx;
+    height: 80rpx;
+    background-color: #fff;
+    font-size: 28rpx;
+    color: #666666;
+    border-bottom: 1px solid #eee;
+}
+
+.orderTitle > div:last-child {
+    color: @priceColor;
+}
+
+.date {
+    font-size: 22rpx;
+    color: #999;
+    padding: 20rpx 30rpx;
+    background: #f6f6f6;
+}
+
+.topTabBar {
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #eee;
+    font-size: 30rpx;
+    background-color: #fff;
+    color: #999999;
+    overflow-x: auto;
+}
+.topTabBar>div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.topTabBar>div div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    border-bottom: 2px solid @tabColor;
+    color: @tabColor !important;
+    font-weight: 600;
+}
+
+.ptCrl {
+    background-color: #ff3333;
+    font-size: 24rpx;
+    color: #fff;
+    border-radius: 20rpx;
+    height: 32rpx;
+    padding: 0 10rpx;
+    margin-right: 20rpx;
+}
+
+.width_25 {
+    width: auto!important;
+    min-width: 25%;
+    white-space: nowrap;
+}
+
+.color_ff3 {
+    color: #ff3333;
+}
+
+.ml_10 {
+    margin-left: 10rpx;
+}
+
+.ml_60 {
+    margin-left: 60rpx;
+}
+
+.mt_40 {
+    margin-top: 40rpx;
+}
+
+.mt_20 {
+    margin-top: 20rpx;
+}
+
+.font_28 {
+    font-size: 28rpx;
+}
+
+.color_ff0 {
+    color: @uni-text-color-obvious;
+}
+
+.center {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.radio_color {
+    color: #000000;
+}
+
+.KJ_color {
+    background: #ff6600 !important;
+}
+
+.JP_color {
+    background: #69b410 !important;
+}
+
+.FX_color {
+    background: #436bff !important;
+}
+
+.ZT_color {
+    background: #80c269 !important;
+}
+
+.MS_color {
+    background: #f1a100 !important;
+}
+
+.hr {
+    width: 100%;
+    height: 20rpx;
+    background-color: #f6f6f6;
+}
+
+.noFindDiv {
+    width: 100% !important;
+    padding-top: 178rpx !important;
+    height: 100% !important;
+}
+
+.fhDivTitle .span {
+    color: #020202;
+    font-weight: 600;
+}
+
+.fhDivTitle .img {
+    width: 27rpx;
+    height: 28rpx;
+}
+
+.mask_cont > p {
+    margin: 30rpx 0 !important;
+}
+
+.mask_cont_div {
+    font-size: 24rpx;
+    margin-top: 10rpx;
+}
+
+.mask_cont_div .img {
+    width: 24rpx;
+    height: 24rpx;
+    margin-right: 10rpx;
+}
+
+.returnLeft{
+    .center();
+    font-size: 24rpx;
+    color: #020202;
+    
+    img{
+        width: 28rpx;
+        height: 28rpx;
+        margin-right: 10rpx;
+    }
+}
+
+.home_navigation {
+    border-bottom: none;
+    background-color: @titleBackground;
+    align-items: flex-end;
+    padding-bottom: 17rpx;
+    box-sizing: border-box;
+    
+    .search_btn {
+        font-size: 28rpx;
+        color: @titleColor;
+        line-height: 68rpx;
+    }
+    
+    .home_input input{
+        height: 68rpx;
+        border-radius: 38rpx;
+        padding-left: 70rpx;
+    }
+    
+    .searchImg{
+        width: 34rpx;
+        height: 34rpx;
+        left: 20rpx;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}
+
+.home_input .cancel{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30rpx;
+    height: 30rpx;
+    left: 560rpx;
+}
+
+.noFindText {
+    font-size: 14px;
+}
